@@ -1,0 +1,19 @@
+
+ion-card-header {
+    padding: 0 !important;
+    border: 1px black solid;
+}
+
+ion-card {
+    border: 3px black solid;
+}
+
+ion-content {
+   --ion-background-color:#40444c;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

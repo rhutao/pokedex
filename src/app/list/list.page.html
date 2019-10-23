@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Lista
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let pokemon of listaPokemon;let i = index" color="dark">
+      <ion-card-header style="text-align: center;">
+        <h4>{{pokemon.name}}</h4>
+      </ion-card-header>
+
+      <ion-card-content class="card-content">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ [i+1] }}.png" style="width: 40%">
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
